@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <div>
+        
+        <p id="description" style="font-size: 50PX ; color: rgb(10, 11, 12);">Forms</p>
+    <form   id='form'>
+        
+        <label id="name-label">Name</label>
+        <input type="text"  class='array'  id="first-name" placeholder=" FirstName">
+        
+        <input type="text" class='array' id="last-name" placeholder="LastName">
+        
+        <label id="email-label">Email</label>
+        <input type="text"  class='array'  id='email' placeholder="EmailAddress" >
+        
+        <label id="number-label">PinCode</label>
+        <input type="number" class='array' id="pincode" placeholder="PinCode">
+        
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gender" value="Male"><span>Male</span>
+        <input type="radio" name="gender" id="gender" value="Female"><span>Female</span>
+        <input type="radio" name="gender" id='gender' value="Others"><span>Others</span>
+        
+        <label>Select Brand</label>
+        <select name="food" id='food' size=4 multiple>
+            <option value='Iphone'>Iphone</option>
+            <option value='Samsung'>Samsung</option>
+            <option value='Redmi'>Redmi</option>
+            <option value='Nokia'>Nokia</option>
+            <option value='Oneplus' >Oneplus</option> 
+            <option value='Motorola' >Motorola</option> 
+            <option value='Oppo' >Oppo</option> 
+            <option value='Vivo' >Vivo</option>          
+        </select>
+        <p id='error'>*atleast 1*</p>
+
+        <label id="city-label">City</label>
+        <input type="text" class='array'  id='City' placeholder="City" >
+        
+        <label id="state-label">State</label>
+        <input type="text" class='array'  id='state' placeholder="state" >
+        
+        <button onclick="click1()" id="submit">Submit</button>
+    </form>
+    
+   </div>
+
+   <div class="result">
+       <table class="table">
+           
+           <tbody >
+
+           </tbody>
+       </table>
+       
+   </div>
+</div>
+  <script src="index.js"></script>
+
+ 
+</body>
+</html>
